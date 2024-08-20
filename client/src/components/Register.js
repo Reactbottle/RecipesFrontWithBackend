@@ -7,8 +7,8 @@ class Register extends React.Component {
       this.state = {
         credentials: {
           username: '',
-          department: '',
           password: '',
+          department: '',
           role:''
         }
       };
@@ -32,7 +32,7 @@ class Register extends React.Component {
   login = e => {
     e.preventDefault();
     // login to server
-    axiosWithAuth().post("http://localhost:7776/api/auth/register", this.state.credentials)
+    axiosWithAuth().post("http://127.0.0.1:8666/api/auth/register", this.state.credentials)
       .then(res => {
         console.log('bk: Login.js: login: res: ', res)
         localStorage.setItem('token', res.config.data)

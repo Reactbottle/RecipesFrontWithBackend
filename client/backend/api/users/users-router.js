@@ -14,7 +14,7 @@ router.get("/", restricted, restrictRole('admin'), (req, res) => {
 
 // Now there is limited accessablity for user 
 router.get('/limited', restricted,restrictRole('user'),(req,res) =>{
-    Users.findBy({username: req?.decodedJWT?.username})
+    Users.findBy({username: req.decodedJWT.username})
       .then((users) => {
         res.json(users)
       })

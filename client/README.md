@@ -1,6 +1,10 @@
+Put backend proj with front end proj
+
 # Family Recipes Build Week 
 
 ChangeLog for RecipeBuilder Version 2.0.1
+
+connect psql \c [DBNAME|- USER|- HOST|- PORT|
 
 # Priorities 
 1]  Editting
